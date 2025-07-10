@@ -9,6 +9,14 @@ router.get('/', async (req, res) => {
   res.json(groups);
 });
 
+// Create a new group
+router.post('/', async (req, res) => {
+  const { name } = req.body;
+  if (!name) return res.status(400).json({ message: 'Name is required' });
+  const group = await Group.create({ name, members: [] });
+  res.json(group);
+});
+
 // Join a group
 router.post('/join', async (req, res) => {
   const { userId, groupId } = req.body;

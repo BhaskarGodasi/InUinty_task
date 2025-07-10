@@ -50,12 +50,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.create-group-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
     margin: 0.5rem;
   }
   .login-form, .add-goal-form {
+    gap: 0.5rem;
+  }
+  .create-group-form {
+    flex-direction: column;
     gap: 0.5rem;
   }
 }

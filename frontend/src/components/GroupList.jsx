@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
 import { GroupContext } from '../contexts/GroupContext';
 import { AuthContext } from '../contexts/AuthContext';
+import CreateGroup from './CreateGroup';
 
 const GroupList = () => {
   const { groups, setGroups, currentGroup, setCurrentGroup } = useContext(GroupContext);
@@ -19,6 +20,7 @@ const GroupList = () => {
   return (
     <div className="group-list">
       <h2>Groups</h2>
+      <CreateGroup />
       <ul>
         {groups.map(group => (
           <li key={group._id}>
