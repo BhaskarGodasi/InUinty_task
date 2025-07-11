@@ -104,4 +104,9 @@ npm run dev
 - **Demo Auth:** Any username/password combo will register or log in a user.
 
 ---
+## Responsiveness
+- Mobile View <img width="451" height="475" alt="Screenshot 2025-07-11 102129" src="https://github.com/user-attachments/assets/acba12c1-9594-4ee9-9546-15241b9e771c" />
+- Laptop View <img width="1884" height="989" alt="Screenshot 2025-07-11 102207" src="https://github.com/user-attachments/assets/12d1a866-9c98-45c7-836b-75f0d1b5d278" />
+
+
 
